@@ -7,7 +7,7 @@ export const GlassCard = ({ children, className, ...props }) => {
         <div
             className={twMerge(
                 clsx(
-                    'bg-slate-900/40 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl bg-gradient-to-b from-white/5 to-transparent hover:border-white/20 transition-colors duration-300',
+                    'bg-slate-900/60 backdrop-blur-xl border border-slate-700/50 rounded-2xl shadow-2xl hover:border-slate-600/50 transition-colors duration-300',
                     className
                 )
             )}

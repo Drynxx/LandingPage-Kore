@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar } from './components/Navbar';
-import { AuroraBackground } from './components/AuroraBackground';
+import { FintechBackground } from './components/FintechBackground';
 import { HeroSection } from './components/HeroSection';
 import { FeaturesSection } from './components/FeaturesSection';
 import { HowItWorks } from './components/HowItWorks';
@@ -12,7 +12,7 @@ import { Footer } from './components/Footer';
 function App() {
   return (
     <main className="relative min-h-screen text-slate-200 selection:bg-indigo-500/30">
-      <AuroraBackground />
+      <FintechBackground />
 
       <Navbar />
 

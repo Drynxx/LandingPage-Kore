@@ -21,10 +21,10 @@ export const Navbar = () => {
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'py-4' : 'py-6'
                 }`}
         >
-            <div className="max-w-7xl mx-auto px-6">
+            <div className="max-w-7xl mx-auto px-4 md:px-6">
                 <div className={`mx-auto rounded-full transition-all duration-300 backdrop-blur-xl border ${scrolled
-                    ? 'bg-slate-900/80 border-white/10 shadow-lg py-3 px-6 max-w-4xl'
-                    : 'bg-slate-900/30 border-white/5 py-3 px-6 max-w-7xl'
+                    ? 'bg-slate-900/80 border-white/10 shadow-lg py-2 md:py-3 px-4 md:px-6 max-w-4xl'
+                    : 'bg-slate-900/30 border-white/5 py-2 md:py-3 px-4 md:px-6 max-w-7xl'
                     }`}>
                     <div className="flex items-center justify-between">
                         <Logo />

@@ -5,7 +5,7 @@ import { GlassCard } from './GlassCard';
 
 export const CallToAction = () => {
     return (
-        <section className="py-24 px-6 relative z-10">
+        <section className="py-12 md:py-24 px-6 relative z-10">
             <div className="max-w-4xl mx-auto">
                 <GlassCard className="p-12 md:p-20 text-center relative overflow-hidden group">
                     {/* Background Glow */}

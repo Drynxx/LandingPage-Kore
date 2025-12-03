@@ -24,7 +24,7 @@ export const InteractiveDemo = () => {
     }, []);
 
     return (
-        <section className="py-24 px-6 relative z-10">
+        <section className="py-12 md:py-24 px-6 relative z-10">
             <div className="max-w-4xl mx-auto text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-sans font-bold tracking-tight text-white mb-4">
                     Just say it. Kore handles the rest.
