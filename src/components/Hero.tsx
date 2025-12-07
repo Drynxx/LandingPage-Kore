@@ -6,22 +6,22 @@ export const Hero = () => {
     const { t } = useLanguage();
 
     return (
-        <section className="pt-32 pb-16 md:pt-40 md:pb-24 flex flex-col items-center justify-center text-center px-4 overflow-hidden">
+        <section className="pt-24 pb-12 md:pt-40 md:pb-24 flex flex-col items-center justify-center text-center px-4 overflow-hidden">
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 className="max-w-4xl mx-auto relative z-10"
             >
-                <h1 className="text-5xl md:text-8xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-b from-white to-white/60 pb-2 leading-tight">
+                <h1 className="text-4xl md:text-8xl font-bold tracking-tight mb-4 md:mb-6 bg-clip-text text-transparent bg-gradient-to-b from-white to-white/60 pb-2 leading-tight">
                     {t('hero.title_1')}
                 </h1>
 
-                <p className="text-lg md:text-2xl text-gray-400 mb-8 md:mb-10 max-w-2xl mx-auto font-light leading-relaxed whitespace-pre-line px-2">
+                <p className="text-base md:text-2xl text-gray-400 mb-6 md:mb-10 max-w-2xl mx-auto font-light leading-relaxed whitespace-pre-line px-2">
                     {t('hero.subtitle')}
                 </p>
 
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 md:mb-20 w-full sm:w-auto px-4">
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10 md:mb-20 w-full sm:w-auto px-4">
                     <a href="https://www.korefinance.app/" className="btn btn-primary group px-6 py-3 md:px-8 md:py-4 text-base md:text-lg rounded-full w-auto min-w-[160px] flex items-center justify-center shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] transition-all duration-300">
                         {t('hero.cta_download')}
                         <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={18} />
