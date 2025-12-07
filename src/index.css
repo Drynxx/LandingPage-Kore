@@ -1,11 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;600;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-surface: rgba(0, 0, 0, 0.3);
+  --glass-highlight: rgba(255, 255, 255, 0.05);
+  --font-system: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif;
+  --primary-blue: #0A84FF;
+  --primary-purple: #BF5AF2;
+  --primary-pink: #FF375F;
+}
+
 @layer base {
-  body {
-    @apply bg-slate-950 text-slate-200 antialiased font-sans;
+  html {
+    scroll-behavior: smooth;
   }
+  
+  body {
+    background-color: #000000;
+    background-image: 
+      radial-gradient(circle at 50% 0%, #1a1a1a 0%, #000000 70%),
+      radial-gradient(circle at 80% 20%, rgba(10, 132, 255, 0.08) 0%, transparent 40%),
+      radial-gradient(circle at 20% 80%, rgba(191, 90, 242, 0.08) 0%, transparent 40%);
+    background-attachment: fixed;
+    color: #ffffff;
+    font-family: var(--font-system);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply backdrop-blur-xl bg-black/40 border border-white/10 shadow-xl;
+  }
+  
+  .glass-panel-elevated {
+    @apply backdrop-blur-2xl bg-white/5 border border-white/10 shadow-2xl;
+    box-shadow: 
+      0 0 0 1px rgba(255, 255, 255, 0.05) inset,
+      0 20px 40px -10px rgba(0, 0, 0, 0.5);
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center font-medium transition-all duration-300 transform active:scale-95;
+  }
+  
+  .btn-primary {
+    @apply bg-white text-black hover:bg-gray-100 shadow-[0_0_20px_rgba(255,255,255,0.3)];
+  }
+  
+  .btn-secondary {
+    @apply bg-white/10 text-white hover:bg-white/20 backdrop-blur-md border border-white/10;
+  }
+
+  .window-controls {
+    @apply flex items-center gap-2 p-4 border-b border-white/5 bg-black/20;
+  }
+
+  .control-dot {
+    @apply w-3 h-3 rounded-full;
+  }
+
+  .dot-red { background-color: #FF5F57; }
+  .dot-yellow { background-color: #FEBC2E; }
+  .dot-green { background-color: #28C840; }
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400;
+}
+
+.section-gradient {
+  background: radial-gradient(circle at 50% 50%, rgba(20, 20, 30, 0.4) 0%, transparent 70%);
 }
