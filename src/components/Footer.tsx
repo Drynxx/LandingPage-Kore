@@ -27,7 +27,7 @@ export const Footer = () => {
                             <li><a href="#features" className="hover:text-white transition-colors">{t('footer.links.features')}</a></li>
                             <li><a href="#ai" className="hover:text-white transition-colors">{t('footer.links.agent')}</a></li>
                             <li><a href="https://www.korefinance.app/" className="hover:text-white transition-colors">{t('footer.links.download')}</a></li>
-                            <li><a href="https://github.com/drynxx/kore-finance-tracker" className="hover:text-white transition-colors">{t('footer.links.docs')}</a></li>
+
                         </ul>
                     </div>
 
@@ -35,7 +35,7 @@ export const Footer = () => {
                     <div>
                         <h4 className="font-semibold mb-4 text-white">{t('footer.col_2')}</h4>
                         <ul className="space-y-3 text-gray-400 text-sm">
-                            <li><a href="https://github.com/drynxx/kore-finance-tracker" className="hover:text-white transition-colors">{t('footer.links.github')}</a></li>
+
                             <li><a href="#" className="hover:text-white transition-colors">{t('footer.links.discord')}</a></li>
                             <li><a href="#" className="hover:text-white transition-colors">{t('footer.links.twitter')}</a></li>
                             <li><a href="#" className="hover:text-white transition-colors">{t('footer.links.support')}</a></li>
@@ -50,9 +50,7 @@ export const Footer = () => {
                     </p>
 
                     <div className="flex items-center gap-6">
-                        <a href="https://github.com/drynxx/kore-finance-tracker" className="text-gray-400 hover:text-white transition-colors">
-                            <Github size={20} />
-                        </a>
+
                         <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
                             <Twitter size={20} />
                         </a>

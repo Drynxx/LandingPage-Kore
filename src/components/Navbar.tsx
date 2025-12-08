@@ -17,22 +17,10 @@ export const Navbar = () => {
                 <div className="hidden md:flex items-center gap-6 text-sm font-medium text-gray-300">
                     <a href="#features" className="hover:text-white transition-colors">{t('nav.features')}</a>
                     <a href="#ai" className="hover:text-white transition-colors">{t('nav.intelligence')}</a>
-                    <a href="https://github.com/drynxx/kore-finance-tracker" className="hover:text-white transition-colors">{t('nav.docs')}</a>
                 </div>
 
                 <div className="flex items-center gap-4">
                     <LanguageSwitch />
-
-                    <div className="w-px h-4 bg-white/10"></div>
-
-                    <a
-                        href="https://github.com/drynxx/kore-finance-tracker"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-white/80 hover:text-white transition-colors"
-                    >
-                        <Github size={18} />
-                    </a>
                 </div>
             </div>
         </nav>
